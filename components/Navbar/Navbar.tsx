@@ -16,7 +16,7 @@ export function Navbar() {
         <div className={styles.navLeft}>
           <Link href="/" className={`${styles.homeLink} ${styles.navLeft}`}>
             <Image
-              src="/logo.ico "
+              src="/logo.png "
               width={70}
               height={60}
               alt="NFT marketplace sample logo"
