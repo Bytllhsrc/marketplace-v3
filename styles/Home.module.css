@@ -45,6 +45,7 @@
 }
 
 .gradient {
+  z-index: -1;
   height: 100%;
   width: 100%;
   opacity: 0.76;
@@ -348,3 +349,47 @@
     max-height: 540px;
   }
 }
+
+
+.waterEffect{
+  z-index: 4;
+ transform: translateY(600);
+  opacity:.8;
+  position:absolute;
+  top: 30%;
+  left: 30%;
+  height: 500px;
+  width:500px;  
+  background-size:cover;
+  background-position:center;
+  border-radius:50%;
+  overflow:hidden;
+  box-shadow:0px 0px 35px -5px rgba(50, 88, 130, 0.32);
+}
+/* using after to make water like effect  */
+.waterEffect::after{
+  content:'';
+  position:absolute;
+  opacity:.6;
+  bottom:0px;
+  right:-30%;
+  height:600px;
+  width:600px;
+  background:skyblue;
+  border-radius:30%;
+  animation:effect 7s ease-in-out alternate infinite;
+}
+
+/* main part  */
+
+/* animation for the effect */
+
+@keyframes effect{
+  to{
+    transform:translateY(-100%) rotate(360deg);
+  }
+}
+
+
+
+

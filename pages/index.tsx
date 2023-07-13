@@ -13,8 +13,9 @@ const Home: NextPage = () => {
       <div className={styles.content}>
         <div className={styles.hero}>
           <div className={styles.heroBackground}>
-            <div className={styles.heroBackgroundInner}>
-              <Image
+            <div className={styles.heroBackgroundInner} >
+              <div  className={styles.waterEffect} >
+              <Image 
                 src="/hero-gradient.png"
                 width={1390}
                 height={1390}
@@ -22,13 +23,15 @@ const Home: NextPage = () => {
                 quality={100}
                 className={styles.gradient}
               />
+
+              </div>
             </div>
           </div>
           <div className={styles.heroAssetFrame}>
             <Image
               src="/hero-asset.png"
-              width={860}
-              height={540}
+              width={500}
+              height={500}
               alt="Hero asset, NFT marketplace"
               quality={100}
               className={styles.heroAsset}
@@ -38,10 +41,10 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Build NFT Marketplaces
+                  LAKE VAN MARKETPLACE
                 </span>
                 <br />
-                faster than ever.
+                Clearer than ever.
               </h1>
               <p className={styles.heroSubtitle}>
                 <Link
@@ -49,10 +52,9 @@ const Home: NextPage = () => {
                   href="https://thirdweb.com"
                   target="_blank"
                 >
-                  thirdweb
+                 
                 </Link>{" "}
-                gives you the tools you need to create audited, performant, and
-                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
+               -----
               </p>
 
               <div className={styles.heroCtaContainer}>
@@ -61,7 +63,7 @@ const Home: NextPage = () => {
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://github.com/thirdweb-example/marketplace-v3"
+                  href="https://github.com/Bytllhsrc"
                   target="_blank"
                 >
                   GitHub
