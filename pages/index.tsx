@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                 >
                  
                 </Link>{" "}
-               -----
+               
               </p>
 
               <div className={styles.heroCtaContainer}>
